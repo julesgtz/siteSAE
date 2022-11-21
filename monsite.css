@@ -132,27 +132,29 @@ header>h5{
     width: 20%;
     justify-content: center;
     text-align: center;
-    background-color: rgb(221 221 221);
+    background-image: linear-gradient(to top, #52819f, #5b7c96, #61788d, #657484, #68707b, #757a82, #81848a, #8d8e91, #a9a9ab, #c5c5c7, #e2e2e2, #ffffff);
     margin-top: 5px;
 
 }
 
 
 #haut{
-    height: 100px;
+    height: 200px;
+    margin: auto;
+    width: 90%;
+    padding: 10%;
+    color: rgb(92, 165, 184);
+    font-size: 1.2em;
+    text-shadow: 6px 6px 6px #858383;
+    font-family: roboto;
 }
 
-
-#menu > ul{
-    height: 50px;
-    margin: ;
-}
 
 
 #menu > ul:hover{
     background-color: rgb(177, 175, 175);
 
-}
+}   
 
 
 /*  clic bouton  */
@@ -160,6 +162,42 @@ header>h5{
 #menubar:focus + #menu {
     display: block;
 }
+
+#menubar:hover{
+    transform: rotate(360deg);
+}
+
+#menubar{
+    transition-duration: 0.5s;
+    background-image: linear-gradient(to bottom, #52819f, #5d7b94, #647588, #68707b, #696b6f);
+    border-color:  #000000;
+    border-style: solid;
+    border-radius: 40%;
+    border-width: 2px;
+}
+
+#delimitations_menu{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#delimitations_menu > ul{
+    width: 100%;
+}
+
+ul > a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+
+}
+
+ul > a:visited{
+    text-decoration: none;
+}
+
 
 
 
@@ -201,6 +239,11 @@ header>h5{
     margin-top: 10%;
     border : 4px solid #000000;
     box-shadow: 20px 20px 5px rgb(92, 165, 184);
+}
+
+
+.parcours > div > img:hover{
+    transform: scale(1.5);
 }
 
 
@@ -290,9 +333,9 @@ header>h5{
 
 .li {
     text-align: start;
-    margin-left: 20px;
-    margin-top: 30px;
-    font-size: 1.5em;
+    margin-left: 10%;
+    margin-top: 4%;
+    font-size: 1.7em;
     color: black;
     text-shadow: #FFFFFF 1px 0 10px;
     font-family: 'Roboto', sans-serif;
