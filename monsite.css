@@ -1,0 +1,398 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+
+
+button{
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    margin-top: 4px;
+}
+
+
+/* Début de page , 1ere cat */
+header{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(46, 41, 41);
+    text-align: center;
+    z-index: 5;
+
+}
+
+
+/* Début de page , 1ere cat ,couleur de la 1e partie du texte*/
+.nom{
+    padding-top: 10%;
+    color: rgb(250, 253, 255);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+/* Début de page , 1ere cat ,couleur de la 2e partie du texte*/
+#color{
+    color:rgb(255, 255, 255) ;
+}
+
+
+
+/* Début de page , 1ere cat ,texte*/
+.nom > p{
+    letter-spacing: 4px;
+    font-weight:700;
+    font-size: 7em;
+    color:rgb(92, 165, 184);
+
+}
+
+
+
+body{
+    height: 100%;
+    font-family: sans-serif;
+}
+
+
+
+/* Début de page , 1ere cat ,texte deuxieme ligne*/
+header>h5{
+    color: rgba(240, 248, 255, 0.507);
+    font-size: 1.4em;
+    text-shadow: #FFFFFF 1px 0 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+/* 2e cat , délimitations*/
+.apropos{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(92, 165, 184);
+    text-align: center;
+    content: '';
+    display: table;
+}
+
+
+/* 2e cat , texte*/
+.apropos > h2{
+    color: beige;
+    letter-spacing: 4px;
+    font-weight:700;
+    font-size: 4em;
+    padding-top: 40px;
+}
+
+
+/* séparateur*/
+#barre{
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 50%;
+    height: 5px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+
+/* 2e cat ,texte 2e ligne*/
+.apropos > h1{
+    padding: 10%;
+    padding-top: 5%;
+    text-shadow: #FFFFFF 1px 0 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* FREE FRONTENT */
+/* centre intéret musique */
+
+
+/* menu clic bouton*/
+#menu {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to top, #52819f, #5b7c96, #61788d, #657484, #68707b, #757a82, #81848a, #8d8e91, #a9a9ab, #c5c5c7, #e2e2e2, #ffffff);
+    margin-top: 5px;
+
+}
+
+
+#haut{
+    height: 200px;
+    margin: auto;
+    width: 90%;
+    padding: 10%;
+    color: rgb(92, 165, 184);
+    font-size: 1.2em;
+    text-shadow: 6px 6px 6px #858383;
+    font-family: roboto;
+}
+
+
+
+#menu > ul:hover{
+    background-color: rgb(177, 175, 175);
+
+}   
+
+
+/*  clic bouton  */
+#menu:hover,
+#menubar:focus + #menu {
+    display: block;
+}
+
+#menubar:hover{
+    transform: rotate(360deg);
+}
+
+#menubar{
+    transition-duration: 0.5s;
+    background-image: linear-gradient(to bottom, #52819f, #5d7b94, #647588, #68707b, #696b6f);
+    border-color:  #000000;
+    border-style: solid;
+    border-radius: 40%;
+    border-width: 2px;
+}
+
+#delimitations_menu{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#delimitations_menu > ul{
+    width: 100%;
+}
+
+ul > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
+ul > a:visited{
+    text-decoration: none;
+}
+
+
+
+
+/* 3e cat , délimitations*/
+.parcours{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(92, 165, 184, 0.44);
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 6px 6px 6px #ffffff;
+}
+
+
+
+/* 3e cat délimitations des divs*/
+.parcours > div {
+    width: 45%;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/* 3e cat textes */
+.parcours > div > h1{
+    padding-top: 25%;
+    letter-spacing: 3px;
+    font-weight:400;
+    font-size: 2.5em;
+    color:rgb(92, 165, 184);
+}
+
+
+
+/* 3e cat images délimitations */
+.parcours > div > img{
+    margin-top: 10%;
+    border : 4px solid #000000;
+    box-shadow: 20px 20px 5px rgb(92, 165, 184);
+}
+
+
+.parcours > div > img:hover{
+    transform: scale(1.5);
+}
+
+
+
+/* séparateur */
+#barre2{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 70%;
+    height: 5px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+
+
+/* 3e cat 1er texte*/
+.parcours > h2{
+    color: rgb(92, 165, 184);
+    letter-spacing: 4px;
+    font-weight:700;
+    font-size: 4em;
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+    text-shadow: #000000 1px 0 20px;
+}
+
+
+
+/* 3e cat image brevet délimitations*/
+#brevet {
+    padding-top: 5%;
+}
+
+
+/* 3e cat footer */
+.parcours > h3{
+    color:rgb(92, 165, 184);
+    letter-spacing: 4px;
+    font-weight:500;
+    font-size: 3em;
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+}
+
+
+
+
+.pro > .div > h1 {
+
+    font-size: 3em;
+    color: beige;
+    text-shadow:6px 6px 0px #000000;
+    margin-top: 20px;
+}
+
+
+
+
+.pro{
+    height: 800px;
+    width: 100%;
+    background-color: rgb(92, 165, 184);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+#h4{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 4em;
+    color: beige;
+    text-shadow:6px 6px 0px #000000;
+    font-family: cursive;
+}
+
+
+
+.li {
+    text-align: start;
+    margin-left: 10%;
+    margin-top: 4%;
+    font-size: 1.7em;
+    color: black;
+    text-shadow: #FFFFFF 1px 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div{
+    height: 500px;
+    width: 35%;
+    margin: auto;
+    border : 4px solid #000000;
+    box-shadow: 20px 20px 5px rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+
+
+
+
+/* deniere cat , footer , délimitations */
+.contact {
+    background-color: rgb(46, 41, 41);
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+
+/* texte footer */
+.contact > p {
+    padding: 50px;
+    color: rgb(250, 253, 255);
+    font-size: 2em;
+
+}
+
+
+
+/* délimitations images */
+.divcontact{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-between;
+}
+
+
+
+/* images rondes */
+.rond{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:100px;
+    height:100px;
+}
+
